@@ -6,84 +6,124 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./normalize.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+    $(window).on('scroll',function(){
+        if($(window).scrollTop()){
+            $('nav').addClass('black');
+        }
+        else{
+            $('nav').removeClass('black');
+        }
+    })
+/*menu button onclick function*/         $(document).ready(function(){
+            $('.menu h4').click(function(){
+                $("nav ul").toggleClass("active")
+        })
+        })
+    </script>
     <title>Document</title>
 </head>
 <body>
     <header>
-        <button id="BtnHeader" name="button"><p>S'IDENTIFIER<p></button> 
-        <img src ="./assets/olp_hero_desktop_UKI_FR.jpg" id="ImgBackHeader">
-        <img src ="./assets/logo-nopad.svg" id="LogoHeader">
-        <h1 id =FirstSentence>5 mondes. 1 destination.</h1>
-        <div id= HeaderSection>    
-            <div class= SectionBtnOne>
-                <p><span>6,99€</span> par mois</p>
-                <p>Sans engagement. <br> Voir conditions.**</p>
-                <button name="button"><p>REGARDER MAINTENANT</p></button>
-            </div>
-            <div class= SectionBtnOne>
-                <p><span>69,99€</span> pour un an</p>
-                <p>Economisez plus de 15%. <br>Voir conditions.**</p>
-                <button name="button"><p>ECONOMISEZ SUR 12 MOIS<p></button> 
-            </div>
-            </div>
-        <p id="PhraseHeader">Résiliation effective à la fin de la période de facturation en cours.
-             **Comparatif entre 12 mois d'abonnement mensuel et l'abonnement annuel.</p>
-             <img src ="./assets/disney-franchise-logos.png" id="ImgDownHeader">
+            <div class="responsive-bar">
+                    <div class="logo">
+                        <img src="./assets/logo-nopad.svg" alt="logo"/>
+                        </div>
+                        <div class="menu">
+                        <h4>Menu</h4>
+                        </div>
+                    </div>
+                    <nav>
+                        <div class="logo">
+                        <img src="./assets/logo-nopad.svg" alt="logo"/>
+                        </div>
+                     <ul>
+                            <input type="button" value="INSCRIVEZ-VOUS" />
+                         <li><a href="#">S'IDENTIFIER</a></li>
+                        </ul>
+                        <li id ="this"><a href="#"><mark>INSCRIVEZ-VOUS</mark></a></li>
+                    </nav>
     </header>
 
     <main>
-        <section> 
-            <div id = "FirstSection">
-                <div class= "CtnFirstSection">
-                    <img src ="./assets/EU_DynamicContentTile[2].png" id= "ImgFirstSection">
-                </div>
-            <div class= "CtnFirstSection">
-                <h2>Du divertissement en continu</h2>
-                <p>Disney+ réunit Disney, Pixar, Marvel, Star Wars et National Geographic dans une destination.
-                Des grands succès aux inoubliables classiques sans oublier les séries, émissions et films exclusifs Disney+ Originals, il y'en a pour tous les goûts</p>
+        <section>
+        <img src="./assets/olp_hero_mobile_UKI_FR.jpg" id="ImgBackHeaderMobile">
+        <img src="./assets/olp_hero_desktop_UKI_FR.jpg" id="ImgBackHeader">
+        </section>
+        <img src="./assets/logo-nopad.svg" id="LogoHeader">
+    <section>
+        <h1 id="FirstSentence">5 mondes. 1 destination.</h1>
+        <div id="HeaderSection">    
+            <div class= SectionBtnOne>
+                <p class="MiniSentence"><span>6,99€</span> par mois</p>
+                <p>Sans engagement. Voir conditions.**</p>
+                <button name="button"><p>REGARDER MAINTENANT</p></button>
+            </div>
+            <div class="SectionBtnTwo">
+                    <p class="MiniSentence"><span>69,99€</span> pour un an</p>
+                <p>Economisez plus de 15%. Voir conditions.**</p>
+                <button name="button"><p>ECONOMISEZ SUR 12 MOIS<p></button> 
             </div>
             </div>
+        <p id="SentenceSection">Résiliation effective à la fin de la période de facturation en cours.
+             **Comparatif entre 12 mois d'abonnement mensuel et l'abonnement annuel.</p>
+             <img src ="./assets/disney-franchise-logos.png" id="ImgDownHeader">
+             <img src="./assets/arrow-rate.png" id="arrowMobile"></a>
         </section>
 
-        <section>
-            <div id = "SecondSection">
-            <div class= "CtnSecondSection">
+        <section> 
+            <article>
+            <div id="FirstSection">
+                <img src="./assets/EU_DynamicContentTile[2].png" id="CtnFirstSectionImg">
+                <div class="CtnFirstSection">
+                    <h2>Du divertissement en continu</h2>
+                    <p>Disney+ réunit Disney, Pixar, Marvel, Star Wars et National Geographic dans une destination.
+                    Des grands succès aux inoubliables classiques sans oublier les séries, émissions et films exclusifs Disney+ Originals, il y'en a pour tous les goûts</p>
+                </div>
+            </div>
+        </article>
+
+        <article>
+            <div id="SecondSection">
+            <div class="CtnSecondSection">
                 <h2>Regardez où et quand vous le voulez</h2>
                 <p>Profitez de Disney+ sur 4 écrans en simultané, en mobilité sur votre téléphone et tablette ou à la maison sur votre TV; le tout en ultra haute définiton sur une sélection de contenus.</p>
             </div>
-                <img src ="./assets/olp_side_align_devicelockup_fr-FR.jpg"class= "CtnSecondSection">
+                <img src="./assets/olp_side_align_devicelockup_fr-FR.jpg"class= "CtnSecondSection">
             </div>
-        </section>
+        </article>
 
-        <section>
-            <div id = "ThirdSection">
-                <img src ="./assets/FR_OLP1_originals_imagery_June_jpg.jpg" class= "CtnThirdSection">
-                <div class= "CtnThirdSection">
+        <article>
+            <div id="ThirdSection">
+                <img src="./assets/FR_OLP1_originals_imagery_June_jpg.jpg" class= "CtnThirdSection">
+                <div class="CtnThirdSection">
                     <h2>De nouveaux Disney+ Originals tous les mois</h2>
                     <p>Des films, des séries et documentaires créés par les artistes des studios Disney, Pixar, Marvel, Star Wars et National Geographic, le tout exclusivement sur Disney</p>
                 </div>
             </div>
-        </section>
+        </article>
 
-        <section>
-            <div id = "FourthSection">
-            <div class= "CtnFourthSection">
+        <article>
+            <div id="FourthSection">
+            <div class="CtnFourthSection">
                 <h2>Téléchargez vos films et séries</h2>
                 <p>Téléchargez ce que vous voulez sur 10 appareils mobiles distincts pour le regarder quand vous le souhaitez, même dans les endroits où il n'ya pas de Wi-Fi.</p>
             </div>
-                <img src ="./assets/olp_side_align_avatar_english.jpg" class= "CtnFourthSection">
+                <img src="./assets/olp_side_align_avatar_english.jpg" class= "CtnFourthSection">
             </div>
+        </article>
         </section>
     </main>
 
     <section>
-        <h2>Accessible sur vos appareils préférés</h2>
-            <div id = "FifthSection">
-                <div class= "CtnFifthSection">
-                    <img src ="">
+             <h2 id ="PhraseFifthSection">Accessible sur vos appareils préférés</h2>
+             <div id="FifthSection">
+                <div class="CtnFifthSection">
+                    <img src="./assets/device-group-tv.png">
                     <h3>Télévisions</h3>
                     <p>Amazon Fire TV</p>
-                    <p>Appareils Android TV/p>
+                    <p>Appareils Android TV</p>
                     <p>AppleTV</p>
                     <p>Chromecast</p>
                     <p>TV LG</p>
@@ -91,46 +131,45 @@
                     <p>Samsung</p>
                 </div>
 
-                <div class= "CtnFifthSection">        
-                    <img src ="">
+                <div class="CtnFifthSection">        
+                    <img src="./assets/device-group-computer.png">
                     <h3>Ordinateurs</h3>
                     <p>Chrome OS</p>
-                    <p>Mac OS/p>
+                    <p>Mac OS</p>
                     <p>PC Windows</p>
                 </div>
 
-                <div class= "CtnFifthSection">        
-                    <img src ="">
+                <div class="CtnFifthSection">        
+                    <img src="./assets/device-group-mobile-tablet.png">
                     <h3>Mobiles et tablettes</h3>
                     <p>Tablettes Amazon Fire</p>
                     <p>Mobiles et tablettes Android</p>
                     <p>Iphone & Ipad</p>
                 </div>
 
-                <div class= "CtnFifthSection">    
-                    <img src ="">
+                <div class="CtnFifthSection">    
+                    <img src="./assets/device-group-game-consoles.png">
                     <h3>Console de jeux</h3>
                     <p>PS4</p>
                     <p>Xbox One</p>
                 </div>
             </div>
     </section>
-
         <footer>
-            <div id = "FooterSection">
-                <div class= "CtnFooterSection">
-                    <img src ="">
-                    <p>Français</p>
-                    <p>Conditions générales d'abonnement</p>
-                    <p>Règles de Respect de la vie Privée</p>
-                    <p>Droits Données dans l'UE et au R-U</p>
-                    <p>Modalités relatives aux cookies</p>
-                    <p>Publicités ciblées par centres d'intérêt</p>
-                    <p>Appareils compatibles</p>
-                    <p>Aide</p>
-                    <p>Gérer vos préférences</p>
-                    <p>A propos de Disney+</p>
-                    <p>Disney. Tous droits réservés</p>
+            <div id="FooterSection">
+                    <img src="./assets/logo-nopad.svg" id="LogoFooter">
+                <div class="CtnFooterSection">
+                    <a>Français  <img src="./assets/arrow-rate.png" id="arrow"></a>
+                    <a>Conditions générales d'abonnement</a>
+                    <a>Règles de Respect de la vie Privée</a>
+                    <a>Droits Données dans l'UE et au R-U</a>
+                    <a>Modalités relatives aux cookies</a>
+                    <a>Publicités ciblées par centres d'intérêt</a>
+                    <a>Appareils compatibles</a>
+                    <a>Aide</a>
+                    <a>Gérer vos préférences</a>
+                    <a>A propos de Disney+</a>
+                    <a>Disney. Tous droits réservés</a>
                 </div>
             </div>
         </footer>
