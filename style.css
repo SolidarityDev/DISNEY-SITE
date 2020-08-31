@@ -16,9 +16,7 @@ h2,h3 {
     color:white;
 }
 /*Agencement bar fixe*/
-.responsive-bar{
-    display: none;
-}
+
 nav{
     width: 100%;
     position: fixed;
@@ -118,25 +116,6 @@ nav.black > ul > li > a:hover{
     z-index:10;
 }
 
-section.sec1{
-    width: 100%;
-    height: 100vh;
-    background-size: cover;
-    z-index:10;
-}
-section.content{
-    margin: 0;
-    padding: 0;
-    font-size: 1.1em;
-    z-index:10;
-}
-section.sec2{
-    width: 100%;
-    height: 100vh;
-    background: url(./assets/logo-nopad.svg);
-    background-size: cover;
-    z-index:10;
-}
 /*Agencement background*/
 
 #ImgBackHeader{
@@ -362,9 +341,7 @@ footer a:nth-child(11){
     h2,h3 {
         color:white;
     }
-    .responsive-bar{
-        display: none;
-    }
+    
     nav{
         display:none;
     }
@@ -412,15 +389,6 @@ footer a:nth-child(11){
         display:none;
     }
     
-    section.sec1{
-        display:none;
-    }
-    section.content{
-        display:none;
-    }
-    section.sec2{
-        display:none;
-    }
     
     #ImgBackHeader{
         position: relative;
@@ -646,10 +614,7 @@ footer a:nth-child(11){
     h2,h3 {
         color: white;
     }
-    .responsive-bar{
-        display: none;
-        z-index:10;
-    }
+    
     nav{
         width: 100%;
         position: fixed;
@@ -751,28 +716,6 @@ footer a:nth-child(11){
         color:grey;
         z-index:10;
     }
-    
-    
-    section.sec1{
-        width: 100%;
-        height: 100vh;
-        background-size: cover;
-        z-index:10;
-    }
-    section.content{
-        margin: 0;
-        padding: 0;
-        font-size: 1.1em;
-        z-index:10;
-    }
-    section.sec2{
-        width: 100%;
-        height: 100vh;
-        background: url(./assets/logo-nopad.svg);
-        background-size: cover;
-        z-index:10;
-    }
-    
     
     #ImgBackHeader{
         position: relative;
@@ -1040,10 +983,7 @@ p{
 h2,h3 {
     color: white;
 }
-.responsive-bar{
-    display: none;
-    z-index:10;
-}
+
 nav{
     width: 100%;
     position: fixed;
@@ -1119,17 +1059,21 @@ nav #this{
     list-style: none;
     font-size: 1.1em;
     z-index:10;
+    text-decoration:none; 
    
 }
 nav input{
    display: none;
 }
 nav.black #this{
-    line-height: 860px; 
-    margin-left: 10%;
+    line-height: 1360px; 
+    margin-left: 7%;
     width:250px;
     font-size: 1.6em;
     z-index:10;
+    text-decoration:none; 
+
+
 }
 mark{
     color:white;
@@ -1145,29 +1089,6 @@ nav.black > ul > li > a:hover{
     color:grey;
     z-index:10;
 }
-
-
-section.sec1{
-    width: 100%;
-    height: 100vh;
-    background-size: cover;
-    z-index:10;
-}
-section.content{
-    margin: 0;
-    padding: 0;
-    font-size: 1.1em;
-    z-index:10;
-}
-section.sec2{
-    width: 100%;
-    height: 100vh;
-    background: url(./assets/logo-nopad.svg);
-    background-size: cover;
-    z-index:10;
-}
-
-
 #ImgBackHeader{
     position: relative;
     z-index: -1;
